@@ -5,6 +5,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
+import CustomAppBar from "../components/AppBar";
 import Copyright from "../components/Copyright";
 
 export default function LogIn() {
@@ -18,6 +19,8 @@ export default function LogIn() {
   };
 
   return (
+    <>
+      <CustomAppBar />
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box
@@ -69,5 +72,6 @@ export default function LogIn() {
         </Box>
         <Copyright sx={{ mt: 8, mb: 4 }} />
       </Container>
+    </>
   );
 }
